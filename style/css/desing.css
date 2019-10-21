@@ -1,0 +1,39 @@
+body {
+  background-color: white; }
+
+.analogue ul {
+  width: 500px;
+  height: 300px; }
+.analogue ul li:nth-child(1) {
+  background: linear-gradient(to right, #00007f, red); }
+.analogue ul li:nth-child(3) {
+  background: linear-gradient(to right, #00ff3f, red); }
+.analogue ul li:nth-child(5) {
+  background: linear-gradient(to right, #00007f, #00ff3f); }
+
+footer p a {
+  text-decoration: none; }
+  footer p a span:nth-child(1) {
+    color: #00007f; }
+  footer p a span:nth-child(2) {
+    color: #7f0066; }
+  footer p a span:nth-child(3) {
+    color: #7f3300; }
+  footer p a span:nth-child(4) {
+    color: #337f00; }
+  footer p a span:nth-child(5) {
+    color: #007f66; }
+footer p a:hover {
+  text-decoration: none; }
+  footer p a:hover span:nth-child(5) {
+    color: #00007f; }
+  footer p a:hover span:nth-child(4) {
+    color: #7f0066; }
+  footer p a:hover span:nth-child(3) {
+    color: #7f3300; }
+  footer p a:hover span:nth-child(2) {
+    color: #337f00; }
+  footer p a:hover span:nth-child(1) {
+    color: #007f66; }
+
+/*# sourceMappingURL=desing.css.map */

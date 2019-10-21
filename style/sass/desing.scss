@@ -1,0 +1,52 @@
+$bkg_color: rgb(255, 255, 255);
+$color1: rgb(0, 0, 127);
+$color2 : rgb(255, 0, 0);
+$color3: rgb(0, 255, 63);
+$nyan1: adjust_hue($color1, 72);
+$nyan2: adjust_hue($color1, 144);
+$nyan3: adjust_hue($color1, 216);
+$nyan4: adjust_hue($color1, 288);
+
+body{
+    background-color: $bkg_color;
+}
+
+.analogue {
+	ul {
+		width: 500px;
+		height: 300px;
+	}
+	ul {
+		li:nth-child(1) {
+			background : linear-gradient(to right, $color1, $color2);}
+	}
+	ul {
+		li:nth-child(3) {
+			background : linear-gradient(to right, $color3, $color2);}
+	}
+	ul {
+		li:nth-child(5) {
+			background : linear-gradient(to right, $color1, $color3);}
+	}
+}
+
+footer {
+	p {
+		a {
+			text-decoration:none;
+			span:nth-child(1) {color:$color1;}
+			span:nth-child(2) {color:$nyan1;}
+			span:nth-child(3) {color:$nyan2;}
+			span:nth-child(4) {color:$nyan3;}
+			span:nth-child(5) {color:$nyan4;}
+		}
+		a:hover {
+			text-decoration:none;
+			span:nth-child(5) {color:$color1;}
+			span:nth-child(4) {color:$nyan1;}
+			span:nth-child(3) {color:$nyan2;}
+			span:nth-child(2) {color:$nyan3;}
+			span:nth-child(1) {color:$nyan4;}
+		}
+	}
+}
